@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="575.0" prefWidth="900.0" styleClass="nav-form" stylesheets="@emploi.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.miniprojet.Emploi">
+
+        <Pane prefHeight="575.0" prefWidth="900.0">
+                <Text fill="WHITE" fontSmoothingType="LCD" layoutX="33.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Formulaire d'enregistrement des enseignants" wrappingWidth="443.857421875">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Text>
+                <Button id="chercher1" fx:id="chercher1" layoutX="277.0" layoutY="73.0" mnemonicParsing="false" onAction="#cherch" prefHeight="34.0" prefWidth="99.0" styleClass="update-btn" stylesheets="@emploi.css" text="Chercher" />
+                <Button id="save1" fx:id="btnadd" layoutX="33.0" layoutY="237.0" mnemonicParsing="false" onAction="#Add" prefHeight="34.0" prefWidth="99.0" styleClass="update-btn" stylesheets="@emploi.css" text="Enregistrer" />
+                <Button id="supp1" fx:id="delete" layoutX="147.0" layoutY="237.0" mnemonicParsing="false" onAction="#delete" prefHeight="34.0" prefWidth="99.0" styleClass="update-btn" stylesheets="@emploi.css" text="Supprimer" />
+                <Button id="modif1" fx:id="update" layoutX="270.0" layoutY="237.0" mnemonicParsing="false" onAction="#update" prefHeight="34.0" prefWidth="99.0" styleClass="update-btn" stylesheets="@emploi.css" text="Modifier" />
+                <Text fill="WHITE" layoutX="33.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Formulaire d'enregistrement des séances de cours">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+                <ChoiceBox id="classe" fx:id="cbclasse" layoutX="91.0" layoutY="327.0" prefHeight="34.0" prefWidth="241.0" />
+                <ChoiceBox id="heure" fx:id="cbheure" layoutX="90.0" layoutY="450.0" prefHeight="34.0" prefWidth="241.0" />
+                <Button id="save2" fx:id="btnadd2" layoutX="83.0" layoutY="532.0" mnemonicParsing="false" onAction="#add2" prefHeight="27.0" prefWidth="99.0" styleClass="update-btn" stylesheets="@emploi.css" text="Enregistrer" />
+                <Button id="request" fx:id="chercher2" layoutX="221.0" layoutY="532.0" mnemonicParsing="false" onAction="#request" prefHeight="27.0" prefWidth="99.0" styleClass="update-btn" stylesheets="@emploi.css" text="Requetes" />
+                <Text fill="WHITE" layoutX="33.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Classe" />
+                <Text fill="WHITE" layoutX="36.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matière" />
+                <Text fill="WHITE" layoutX="45.0" layoutY="426.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jour" />
+                <Text fill="WHITE" layoutX="40.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Heure" />
+                <TextField id="mat1" fx:id="txtmat1" layoutX="36.0" layoutY="73.0" prefHeight="34.0" prefWidth="230.0" promptText="Matricule" />
+                <TextField id="nom" fx:id="txtnom" layoutX="36.0" layoutY="126.0" prefHeight="34.0" prefWidth="341.0" promptText="Nom" />
+                <TextField id="contact" fx:id="txtcontact" layoutX="36.0" layoutY="179.0" prefHeight="34.0" prefWidth="341.0" promptText="Contact" />
+                <TextField id="matiere" fx:id="txtmatiere" layoutX="92.0" layoutY="369.0" prefHeight="34.0" prefWidth="241.0" promptText="Matiere" />
+                <TextField id="mat2" fx:id="txtmat2" layoutX="89.0" layoutY="492.0" prefHeight="34.0" prefWidth="241.0" promptText="Matricule Enseignant" />
+            <TableView id="tab1" fx:id="table" layoutX="393.0" layoutY="59.0" prefHeight="224.0" prefWidth="494.0">
+              <columns>
+                <TableColumn fx:id="matcol" prefWidth="137.0" text="Matricule" />
+                <TableColumn fx:id="nomcol" prefWidth="198.0" text="Nom" />
+                  <TableColumn fx:id="contcol" prefWidth="158.0" text="Contact" />
+              </columns>
+            </TableView>
+            <TableView id="tab2" fx:id="table2" layoutX="342.0" layoutY="314.0" prefHeight="231.0" prefWidth="544.0">
+              <columns>
+                <TableColumn fx:id="colclasse" prefWidth="99.0" text="Classe" />
+                <TableColumn fx:id="colmatiere" prefWidth="107.0" text="Matiere" />
+                  <TableColumn fx:id="coljour" prefWidth="110.0" text="Jour" />
+                  <TableColumn fx:id="colheure" prefWidth="114.0" text="Heure" />
+                  <TableColumn fx:id="colenseignant" prefWidth="112.0" text="Enseignant" />
+              </columns>
+            </TableView>
+      <DatePicker fx:id="cbjour" layoutX="91.0" layoutY="412.0" prefHeight="34.0" prefWidth="241.0" promptText="choisir le jour" />
+
+            </Pane>
+
+</AnchorPane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="575.0" prefWidth="900.0" styleClass="nav-form" stylesheets="@emploi.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.miniprojet.Requetes">
+   <children>
+      <Text fill="WHITE" layoutX="28.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Les séances de cours dans la semaine d'une matière dans une classe">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="70.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Classe">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="243.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matière">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <TableView id="tab3" fx:id="tabv" layoutX="59.0" layoutY="151.0" prefHeight="229.0" prefWidth="798.0">
+        <columns>
+          <TableColumn fx:id="colid" prefWidth="57.0" text="ID" />
+          <TableColumn fx:id="colclasse" prefWidth="119.0" text="Classe" />
+           <TableColumn fx:id="colmatiere" prefWidth="108.0" text="Matiere" />
+           <TableColumn fx:id="coljour" prefWidth="129.0" text="Jour" />
+           <TableColumn fx:id="colheure" prefWidth="115.0" text="Heure" />
+           <TableColumn fx:id="colenseignant" prefWidth="132.0" text="Nom enseignant" />
+           <TableColumn fx:id="colcontact" prefWidth="137.0" text="Contact enseignant" />
+        </columns>
+      </TableView>
+      <Button id="chercher2" fx:id="btcchercher2" layoutX="485.0" layoutY="83.0" mnemonicParsing="false" onAction="#chercher2" prefHeight="34.0" prefWidth="83.0" styleClass="update-btn" stylesheets="@emploi.css" text="Chercher" />
+      <TextField id="matiere" fx:id="txtmatiere2" layoutX="199.0" layoutY="80.0" prefHeight="41.0" prefWidth="273.0" promptText="Matiere" styleClass="search" stylesheets="@emploi.css" />
+      
+      <TextField id="id" fx:id="txtid2" layoutX="54.0" layoutY="410.0" prefHeight="34.0" prefWidth="162.0" promptText="ID" />
+      <Button id="supp2" fx:id="btnsupp2" layoutX="237.0" layoutY="410.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="34.0" prefWidth="83.0" styleClass="update-btn" stylesheets="@emploi.css" text="Supprimer" />
+      <Button id="btnchercher3" fx:id="btnchercher3" layoutX="332.0" layoutY="505.0" mnemonicParsing="false" onAction="#chercher3" prefHeight="34.0" prefWidth="83.0" styleClass="update-btn" stylesheets="@emploi.css" text="Chercher" />
+      <ChoiceBox id="classe2" fx:id="cbclasse3" layoutX="136.0" layoutY="505.0" prefHeight="34.0" prefWidth="173.0" />
+      <Text fill="WHITE" layoutX="43.0" layoutY="484.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Emploi du temps de la semaine par classe">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="28.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="84.0" layoutY="527.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Classe">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="cbclasse2" layoutX="28.0" layoutY="80.0" prefHeight="41.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
